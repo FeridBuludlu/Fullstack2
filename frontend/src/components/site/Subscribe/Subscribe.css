@@ -1,0 +1,45 @@
+.subscribe_area{
+    background-image: url("https://preview.colorlib.com/theme/aranoz/img/subscribe_area.png.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.subscribe_area_text {
+    padding-top: 90px;
+  h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff3368;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 35px 0 67px;
+    font-family: "Poppins", sans-serif;
+
+  }
+}
+
+.input-group {
+    input {
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .input-group-append a {
+      padding: 22px 40px;
+      text-decoration: none;
+      border-radius: 0px 5px 5px 0px;
+      border: 0px solid transparent;
+      background-color: #ff3368;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  
+  }

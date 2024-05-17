@@ -1,0 +1,59 @@
+.section_tittle h2 {
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .single_feature_post_text {
+    padding: 50px;
+    background-color: #f8fbff;
+    margin-bottom: 30px;
+    position: relative;
+    height: 400px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ff3368;
+      position: absolute;
+      left: 50px;
+      bottom: 60px;
+      line-height: 15px;
+      z-index: 5;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+  
+    }&:hover a{
+      opacity: 1;
+      bottom: 50px;
+      visibility: visible;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      margin-top: 21px;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      line-height: 2;
+      font-size: 15px;
+      margin-bottom: 0px;
+      color: #000;
+      font-weight: 300;
+    }
+    img {
+      max-height: 250px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+  

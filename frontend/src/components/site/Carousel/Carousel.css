@@ -1,0 +1,36 @@
+.card-all {
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+}
+.slick-dots li button:before{
+    top: -50px !important;
+}
+
+.col-3 {
+  width: 100% !important;
+}
+
+.card-body a {
+  color: #ff3368;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.card-body:hover a {
+  opacity: 1;
+  visibility: visible;
+}

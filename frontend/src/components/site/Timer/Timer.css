@@ -1,0 +1,50 @@
+.timer_section {
+  background-color: #ecfdff;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.offer_text h2 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  .date {
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-weight: 700;
+    border-right: 1px solid #edeff2;
+    padding-right: 9%;
+    span {
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      color: #666666;
+    }
+  }
+}
+.input-group {
+  input {
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+  }
+  .input-group-append a {
+    position: absolute;
+    padding: 22px 40px;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    border-radius: 0px 5px 5px 0px;
+    border: 0px solid transparent;
+    background-color: #ff3368;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+}

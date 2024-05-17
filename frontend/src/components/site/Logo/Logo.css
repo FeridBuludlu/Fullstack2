@@ -1,0 +1,14 @@
+.single_client_logo{
+    height: 125px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #edeff2;
+    width: 20%;
+    float: left;
+    border-bottom: 1px solid #edeff2;
+}
+.Logos{
+    padding-top: 100px;
+}
