@@ -13,13 +13,13 @@ const Header = () => {
         <img src="" alt="" />
         <ul className="list_ul">
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <div class="dropdown">
               <button class="dropbtn">Shop</button>
               <div class="dropdown-content">
-                <a href="#">Shop Category</a>
+                <a href="/admin/add">Shop Category</a>
                 <a href="#">Product Details</a>
                 <a href="#">Link 3</a>
               </div>
@@ -31,7 +31,7 @@ const Header = () => {
               <div class="dropdown-content">
                 <a href="#">Login</a>
                 <a href="#">Tracking</a>
-                <a href="#">Product Checkout</a>
+                <a href="/admin">Product Checkout</a>
                 <a href="#">Shopping Card</a>
                 <a href="#">Confirmation</a>
                 <a href="#">Elements</a>

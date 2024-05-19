@@ -2,6 +2,7 @@
     import React, { useContext } from 'react'
     import { Helmet } from 'react-helmet'
     import MainContext from '../../../context/context'
+import Addproduct from '../../../components/admin/Addproduct/Addproduct'
     
     const Add = () => {
         const {data,setdata} = useContext(MainContext)
@@ -10,7 +11,7 @@
                 <Helmet>
                     <title>Add</title>
                 </Helmet>
-                <div>Add page</div>
+                <Addproduct/>
         </>
         )
     }

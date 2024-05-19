@@ -1,18 +1,63 @@
 const express = require("express")
-const cors = require("cors")
 const mongoose = require("mongoose")
-const BlogsRouter = require("./routes/Blogs.routes")
+const cors = require("cors")
 const app = express()
-
-require("dotenv").config()
-app.use(cors())
 app.use(express.json())
-app.use("/api/blogs", BlogsRouter)
-
-mongoose.connect(process.env.CONNECTION_STRING).then(() => {
-    console.log("connected")
+app.use(cors())
+require("dotenv").config()
+const productSchema = mongoose.Schema({
+    title: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: false
+    },
+    isDeleted: {
+        type: Boolean,
+        default: false
+    },
+    image: {
+        type: String,
+        required: true
+    },
+}, {
+    timestamps: true
+})
+const Products = mongoose.model("Product", productSchema)
+app.get("/api/products", async (req, res) => {
+    const response = await Products.find()
+    res.send(response)
 })
 
-app.listen(8080, () => {
-    console.log("server running on 8080")
+app.get("/api/products/:id", async (req, res) => {
+    const { id } = req.params
+    const target = await Products.findById(id)
+    res.send(target)
+})
+app.delete("/api/products/:id", async (req, res) => {
+    const { id } = req.params
+    await Products.findByIdAndDelete(id)
+    const items = await Products.find()
+    res.send(items)
+})
+app.post("/api/products", async (req, res) => {
+    const { title, price, image, description } = req.body
+    const newProd = new Products({ title: title, price: price, image: image , description: description })
+    await newProd.save()
+    res.status(201).send("item created")
+})
+app.put("/api/products/:id", async (req, res) => {
+    const { id } = req.params
+    const { title, price, image , description } = req.body
+    await Products.findByIdAndUpdate(id, { ...req.body })
+    const items = await Products.find()
+    res.send(items)
+})
+mongoose.connect(process.env.CONNECTION_STRING).then(res => {
+    console.log("db connected")
+})
+app.listen(process.env.PORT, (req, res) => {
+    console.log("api running on 8080")
 })
