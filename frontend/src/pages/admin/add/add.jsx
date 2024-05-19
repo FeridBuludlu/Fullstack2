@@ -10,8 +10,7 @@
                 <Helmet>
                     <title>Add</title>
                 </Helmet>
-                <div>Add page
-                </div>
+                <div>Add page</div>
         </>
         )
     }

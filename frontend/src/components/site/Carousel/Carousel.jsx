@@ -102,6 +102,94 @@ function Carousel() {
             </div>
           </div>
         </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <div className="card card-all">
+                <img
+                  className="card-img-top"
+                  src="https://preview.colorlib.com/theme/aranoz/img/product/product_1.png.webp"
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Quartz Belt Watch</h5>
+                  <p className="card-text">
+                  $150.00
+                  </p>
+                  <a href="#" className="button">
+                  Go Details +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <div className="card card-all">
+                <img
+                  className="card-img-top"
+                  src="https://preview.colorlib.com/theme/aranoz/img/product/product_1.png.webp"
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Quartz Belt Watch</h5>
+                  <p className="card-text">
+                  $150.00
+                  </p>
+                  <a href="#" className="button">
+                  Go Details +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <div className="card card-all">
+                <img
+                  className="card-img-top"
+                  src="https://preview.colorlib.com/theme/aranoz/img/product/product_1.png.webp"
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Quartz Belt Watch</h5>
+                  <p className="card-text">
+                  $150.00
+                  </p>
+                  <a href="#" className="button">
+                  Go Details +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <div className="card card-all">
+                <img
+                  className="card-img-top"
+                  src="https://preview.colorlib.com/theme/aranoz/img/product/product_1.png.webp"
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Quartz Belt Watch</h5>
+                  <p className="card-text">
+                  $150.00
+                  </p>
+                  <a href="#" className="button">
+                  Go Details +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
       </Slider>
     </div>

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Header from '../../layout/site/Header/header'
 import { Outlet } from 'react-router'
